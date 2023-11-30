@@ -1,0 +1,13 @@
+﻿@using Class.Models;
+@model Catagory
+
+<div class="card">
+    <h5 class="card-header">Featured</h5>
+    <div class="card-body">
+        <form method="post">
+            <h5 class="card-title">@Model.Name</h5>
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a asp-action="index" asp-controller="genre" class="btn btn-primary">Back to home</a>
+        </form>
+    </div>
+</div>
